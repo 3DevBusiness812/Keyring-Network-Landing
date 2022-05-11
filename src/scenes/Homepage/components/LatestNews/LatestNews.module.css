@@ -1,0 +1,259 @@
+.newsWrap {
+  padding: 144px 0;
+  background: #0f2830;
+  color: #ffffff;
+}
+.newsContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.decorEllipse,
+.decorQuestion {
+  position: absolute;
+  z-index: -1;
+}
+
+.decorEllipse {
+  top: -128px;
+  right: calc(90 / 1440 * 100%);
+}
+
+.decorQuestion {
+  left: 426px;
+  bottom: -226px;
+}
+
+.titleWrap {
+  margin: 0 auto 64px;
+  max-width: 530px;
+  text-align: center;
+}
+
+.titleWrap h2 {
+  margin: 0 0 32px;
+}
+
+.titleWrap p {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.postsWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 48px;
+  max-width: 376px;
+  background: #ffffff;
+}
+
+.post:first-child {
+  margin-left: 0;
+}
+
+.post:before {
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(308.67deg, #2ee297 -15.91%, #1dc9d4 120.74%);
+  border: 2px solid #0f2830;
+  content: "";
+}
+
+.imageWrap {
+  overflow: hidden;
+  border: 2px solid #0f2830;
+  border-bottom: none;
+  height: 230px;
+}
+
+.imageWrap img {
+  display: flex;
+  transition: all .4s;
+}
+
+.post:hover .imageWrap img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.info {
+  position: relative;
+  padding: 40px;
+  background: #ffffff;
+  border: 2px solid #0f2830;
+}
+
+.mediumIcon {
+  position: absolute;
+  right: 40px;
+  bottom: 44px;
+  width: 40px;
+}
+
+.title {
+  margin: 0 0 12px;
+  font-family: 'Sora', sans-serif;
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #03032D;
+}
+
+.text {
+  margin: 0 0 40px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #03032D;
+}
+
+.author {
+  margin: 0 0 6px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0F2830;
+}
+
+.date {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+}
+
+.newsBtn {
+  margin: 80px auto 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+@media (max-width: 1200px) {
+  .info {
+    padding: 18px;
+  }
+
+  .mediumIcon {
+    right: 18px;
+    bottom: 28px;
+    width: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  .newsWrap {
+    padding: 56px 0;
+  }
+
+  .post {
+    margin-left: 28px;
+  }
+
+  .info {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .date {
+    padding-right: 40px;
+  }
+
+  .decorEllipse {
+    top: -140px;
+  }
+
+  .decorQuestion {
+    left: initial;
+    right: 52px;
+    bottom: -100px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsWrap {
+    scroll-margin-top: 80px;
+  }
+
+  .titleWrap {
+    margin-bottom: 40px;
+  }
+
+  .titleWrap h2 {
+   margin-bottom: 16px;
+  }
+
+  .titleWrap p {
+    font-size: 16px;
+  }
+
+  .postsWrap {
+    flex-direction: column;
+  }
+
+  .post,
+  .post:first-child {
+    margin:  0 auto 24px;
+  }
+
+  .post:before {
+    right: -4px;
+    bottom: -4px;
+    border-width: 1px;
+  }
+
+  .info {
+    padding: 24px;
+    border-width: 1px;
+  }
+
+  .imageWrap {
+    border-width: 1px;
+  }
+
+  .text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .author {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .decorEllipse {
+    right: 52px;
+    top: -104px;
+    width: 90px;
+  }
+
+  .decorQuestion {
+    bottom: -110px;
+    width: 60px;
+  }
+
+  .newsBtn {
+    margin: 20px auto 0;
+  }
+}

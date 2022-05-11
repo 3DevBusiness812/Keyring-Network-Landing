@@ -1,0 +1,116 @@
+.hero {
+  position: relative;
+  background: #0f2830;
+  color: #ffffff;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  height: inherit;
+}
+
+.heroText {
+  position: relative;
+  text-align: center;
+  height: inherit;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.heroText h1 {
+  margin: 0 auto 32px;
+  max-width: 900px;
+}
+
+.heroText .description {
+  margin: 0 auto 64px;
+  max-width: 530px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.heroText :global .react-typeform-embed {
+  position: initial;
+}
+
+.heroText .ctaText {
+  font-size: 16px;
+  opacity: .6;
+}
+
+.heroBtn {
+  margin: 0 0 24px;
+}
+
+@media (max-height: 800px) {
+  .hero.heroWithPartners {
+    height: auto;
+    min-height: 100vh;
+    padding: 10rem 0 5rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .hero.heroWithPartners {
+    height: auto;
+    min-height: 100vh;
+    padding: 10rem 0 5rem;
+  }
+}
+
+@media (max-height: 800px) {
+  .hero.heroWithPartners {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero.heroWithPartners {
+    height: auto;
+    min-height: 100vh;
+    padding: 5rem 0;
+  }
+
+  .heroText .description {
+    font-size: 16px;
+  }
+  .heroText h1 {
+    margin-bottom: 16px;
+    padding-right: 14px;
+  }
+
+  .heroBtn {
+    margin-bottom: 16px;
+  }
+
+  .heroText .ctaText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .heroText .description {
+    margin: 0 auto 32px;
+  }
+
+  .heroText {
+    margin: 0px auto 0;
+    height: auto;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .container {
+    height: auto;
+  }
+}

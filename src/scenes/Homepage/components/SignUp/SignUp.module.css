@@ -1,0 +1,191 @@
+.signUpWrap {
+  position: relative;
+  z-index: 4;
+  margin: 146px 0;
+  background: #ffffff;
+}
+
+.signUpContent {
+  position: relative;
+  z-index: 3;
+  padding: 98px;
+  background: #ffffff;
+  border: 2px solid #0f2830;
+}
+
+.signUpWrap:before {
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(308.67deg, #2ee297 -15.91%, #1dc9d4 120.74%);
+  border: 2px solid #0f2830;
+  content: "";
+}
+
+.titleWrap h2 {
+  margin-bottom: 32px;
+}
+
+.titleWrap p {
+  margin: 0 0 64px;
+  max-width: 510px;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  width: 265px;
+  /* height: 64px; */
+  background: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
+  border: 2px solid #0F2830;
+  align-content: center;
+  justify-content: center;
+  color: inherit;
+}
+
+.btn:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  content: "";
+  opacity: 0;
+  transition: .4s;
+  background: linear-gradient(0deg, rgba(15, 40, 48, 0.1), rgba(15, 40, 48, 0.1)), linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  align-content: center;
+}
+
+.btn:hover:after {
+  opacity: 1;
+}
+
+.labirinth {
+  position: absolute;
+  right: 130px;
+  bottom: -36px;
+  z-index: 5;
+}
+
+.decorKeyUp,
+.decorFingerPrint {
+  position: absolute;
+  z-index: 5;
+}
+
+.decorKeyUp {
+  top: -32px;
+  right: 300px;
+}
+
+.decorFingerPrint {
+  right: 116px;
+  top: 116px;
+}
+
+@media (max-width: 1200px) {
+  .labirinth {
+    right: 40px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  .signUpContent {
+    padding: 44px;
+  }
+
+  .labirinth {
+    right: 40px;
+    max-width: 300px;
+  }
+
+  .decorKeyUp,
+  .decorFingerPrint {
+    width: 58px;
+  }
+
+  .decorFingerPrint {
+    right: 32px;
+    top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleWrap h2 {
+    margin-bottom: 16px;
+  }
+
+  .titleWrap p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .signUpWrap {
+    margin: 56px 0;
+    scroll-margin-top: 80px;
+  }
+
+  .signUpWrap:before {
+    border-width: 1px;
+  }
+
+  .signUpContent {
+    padding: 220px 24px 24px;
+    border-width: 1px;
+  }
+
+  .labirinth {
+    top: 24px;
+    left: 24px;
+    bottom: initial;
+    right: 40px;
+    max-width: 220px;
+  }
+
+  .btn {
+    width: 100%;
+
+
+  }
+
+  .btn span {
+    font-size: 16px;
+    padding: 11px 20px;
+  }
+
+  .decorKeyUp,
+  .decorFingerPrint {
+    width: 32px;
+  }
+
+  .decorKeyUp {
+    top: -12px;
+    left: 58px;
+  }
+
+  .decorFingerPrint {
+    top: 162px;
+  }
+}

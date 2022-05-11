@@ -1,0 +1,302 @@
+.partnersWrap {
+  padding: 153px 0 116px;
+}
+
+.container {
+  position: relative;
+}
+
+.titleWrap {
+  margin: 0 0 48px;
+}
+
+.titleWrap h2 {
+  margin: 0 0 32px;
+}
+
+.titleWrap p {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.itemListContent {
+  padding-right: 40px;
+}
+
+.contentWrap {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textWrapper {
+  margin-left: 34px;
+}
+
+.itemList {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.itemListWrap  {
+  margin-bottom: 32px;
+}
+
+.itemListWrap:last-child {
+  margin-bottom: 0;
+}
+
+.itemListWrap .itemList:before {
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+  z-index: -1;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(308.67deg, #2ee297 -15.91%, #1dc9d4 120.74%);
+  border: 2px solid #0f2830;
+  transition: .4s;
+  content: "";
+}
+
+.title {
+  margin: 0;
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  margin: 10px 0 0;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.imageWrap {
+  position: relative;
+  margin-right: 100px;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image {
+  border: 2px solid #0f2830;
+  width: 540px;
+  height: 564px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.decorArrow,
+.decorLock {
+  position: absolute;
+  z-index: 5;
+}
+
+.decorArrow {
+  top: -44px;
+  right: 116px;
+}
+
+.decorLock {
+  left: 60px;
+  bottom: -44px;
+}
+
+.imageWrap:before {
+  position: absolute;
+  right: -9px;
+  bottom: -10px;
+  z-index: -1;
+  display: flex;
+  width: 57%;
+  height: 67%;
+  background: linear-gradient(308.67deg, #2ee297 -15.91%, #1dc9d4 120.74%);
+  border: 2px solid #0f2830;
+  content: "";
+}
+
+.imageWrap .mainImg {
+  position: relative;
+  z-index: 2;
+  width: inherit;
+  height: inherit;
+}
+
+.icon {
+  margin-right: 32px;
+  width: 48px;
+  flex-shrink: 0;
+}
+
+.icon svg {
+  width: 100%;
+  height: auto;
+}
+
+.itemListWrap .icon stop {
+  transition: .4s;
+}
+
+.icon:hover stop:first-child
+{
+  stop-color: #2EE297;
+}
+
+.icon:hover stop:last-child {
+  stop-color: #1DC9D4;
+}
+
+.imageWrapMobile {
+  display: none
+}
+
+@media (max-width: 1200px) {
+  .imageWrap {
+    margin-right: 60px;
+  }
+
+  .image {
+    width: 440px;
+    height: 462px;
+  }
+}
+
+@media (max-width: 991px) {
+  .partnersWrap {
+    padding: 58px 0;
+  }
+
+  .titleWrap {
+    margin-left: 0;
+  }
+
+  .titleWrap,
+  .itemListWrap {
+    padding: 0;
+  }
+
+  .imageWrap {
+    display: none;
+  }
+
+  .imageWrap.imageWrapMobile {
+    display: flex;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .imageWrapMobile {
+    margin: 0 auto 60px;
+    width: 440px;
+    height: 440px;
+  }
+
+
+
+  .itemListWrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    background: #ffffff;
+  }
+
+  .itemList {
+    margin: 0;
+
+  }
+
+  .itemList {
+    height: initial;
+    order: 1;
+    border: none;
+  }
+
+
+
+  .decorArrow {
+    top: -20px;
+    right: 110px;
+    width: 32px;
+  }
+
+  .decorLock {
+    width: 44px;
+    left: 60px;
+    bottom: -14px;
+  }
+
+  .textWrapper {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title, .text {
+    font-size: 14px;
+  }
+
+  .icon {
+    margin-right: 20px;
+    width: 32px;
+  }
+
+  .partnersWrap {
+    scroll-margin-top: 80px;
+  }
+
+  .decorLock {
+    left: 30px;
+  }
+
+  .decorArrow {
+    right: 60px;
+  }
+
+  .titleWrap p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .imageWrapMobile {
+    width: 360px;
+    height: 360px;
+  }
+
+
+  .itemList {
+    padding: 0;
+    width: 100%;
+  }
+
+  .itemListContent {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageWrapMobile {
+    width: 260px;
+    height: 260px;
+  }
+}
